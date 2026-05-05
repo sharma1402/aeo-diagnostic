@@ -45,13 +45,13 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 Please provide your top 5-7 recommendations. Be specific about brand names and why each is good.`;
 
     const [cohereRes, groqRes, geminiRes] = await Promise.allSettled([
-      fetch(`${baseUrl}/api/query-claude`, {
+      fetch(`${baseUrl}/api/query-cohere`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ systemPrompt, userPrompt }),
+        body: JSON.stringify({ userPrompt }),
       }).then((r) => r.json()),
 
-      fetch(`${baseUrl}/api/query-gpt4`, {
+      fetch(`${baseUrl}/api/query-groq`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ query }),

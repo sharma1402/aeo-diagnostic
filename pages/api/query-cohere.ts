@@ -13,7 +13,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         'Authorization': `Bearer ${process.env.COHERE_API_KEY}`,
       },
       body: JSON.stringify({
-        model: 'command-r-plus',
+        model: "command-r",
         message: `You are a helpful product recommendation assistant. Give honest specific recommendations as a numbered list.\n\n${userPrompt}\n\nProvide top 5-7 recommendations with brand names.`,
         max_tokens: 1024,
       }),

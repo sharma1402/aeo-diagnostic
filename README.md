@@ -151,4 +151,3 @@ This project was built as part of a hiring challenge demonstrating:
 
 ---
 
-*Made with ♥ and a lot of API calls*
