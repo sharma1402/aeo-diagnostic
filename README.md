@@ -1,7 +1,7 @@
 # AEO Diagnostic 🎯
 ### AI Visibility Report Card — Does Your Brand Show Up When Customers Ask AI What to Buy?
 
-**Live Demo:** [aeo-diagnostic.vercel.app](https://aeo-diagnostic.vercel.app) *(deploy your own below)*
+**Live Demo:** [https://aeo-diagnostic-gamma.vercel.app/](https://aeo-diagnostic-gamma.vercel.app/) 
 
 ---
 
